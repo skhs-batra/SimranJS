@@ -1,0 +1,522 @@
+1. Test Plan ID and Title
+Test Plan ID: TP-VWO-001
+Title: VWO Digital Experience Optimization Platform – System Test Plan
+Source: Product Requirements Document (PRD), dated January 7, 2026.
+2. Objective and References
+Objective
+The objective of this test plan is to define the planned verification approach for
+the VWO Digital Experience Optimization Platform against the functional, non
+functional, business, and workflow requirements documented in the supplied
+PRD.
+Testing will focus on determining whether the documented capabilities support:
+Experiment creation and execution.
+Statistical result analysis through SmartStats.
+Behavioral insights such as heatmaps and session recordings.
+Audience targeting and personalization.
+Reporting and dashboards.
+External integrations.
+Collaboration and workflow management.
+Applicable performance, security, scalability, privacy, and reliability
+requirements.
+The PRD identifies the primary business objectives as improving conversion
+rates, validating UX hypotheses using empirical data, reducing engineering
+dependency, and providing unified insights. 
+Reference
+Supplied VWO Product Requirements Document, January 7, 2026.
+VWO product URL stated in the PRD: https://app.vwo.com/.
+No separate detailed technical/API specification was provided.
+3. In Scope and Out of Scope
+In Scope
+Product Requirements Document (…
+Product Requirements Document (…
+Product Requirements Document (…
+Experimentation & Testing
+A/B testing.
+Split URL testing.
+Multivariate testing.
+Multiple experiment variations.
+Audience targeting.
+Custom goals and metrics.
+SmartStats result analysis.
+Version previews.
+Cross-browser and cross-device validation.
+Experiment scheduling.
+Reporting.
+These capabilities are documented in the PRD's experimentation requirements.
+Product Requirements Document (…
+Behavioral Insights
+Heatmaps:
+Click.
+Scroll.
+Focus.
+Session recordings.
+On-page surveys and feedback.
+Funnel analytics.
+Behavioral-data analysis. 
+Personalization
+Product Requirements Document (…
+Audience segmentation based on documented attributes such as
+geography, behavior, and demographics.
+Customized content delivery.
+Segment-based experiences. 
+Product Requirements Document (…
+Program / Workflow Management
+Central planning interface.
+Collaboration functionality.
+Kanban-style experiment backlog/workflow. 
+Integrations
+Product Requirements Document (…
+Documented integration ecosystem, including:
+Shopify.
+Salesforce.
+Segment.
+Snowflake.
+WordPress.
+Drupal.
+CDPs and analytics systems.
+Tracking/reporting integrations where supported by the available test
+environment. 
+Product Requirements Document (…
+Non-functional Requirements
+Where the required environment and measurable criteria are available:
+Editing-workflow performance.
+2FA.
+Role-based access control.
+Activity logs.
+Scalability.
+Data privacy.
+Reliability/availability. 
+Out of Scope
+Product Requirements Document (…
+The following are outside the currently documented test scope unless additional
+requirements are supplied:
+Future AI-driven suggestion engine.
+Future native mobile SDK enhancements.
+Future predictive analytics and ROI forecasting.
+Detailed mobile-native application testing beyond capabilities explicitly
+documented.
+Undocumented APIs or backend services.
+Undocumented business rules.
+Undocumented browser/device/version compatibility requirements.
+Production deployment validation.
+Actual production SLA measurement unless production monitoring data and
+authorization are provided.
+The future enhancements are explicitly identified separately in the PRD.
+Product Requirements Document (…
+4. Requirements and Planned Coverage
+Requirement
+Planned Coverage
+Risk
+FR1 – A/B, Split &
+Multivariate Testing
+FR2 – SmartStats Engine
+FR3 – Visual & Code Editor
+FR4 – Heatmaps & Session
+Recordings
+FR5 – Audience Targeting
+FR6 – Real-time Reporting
+& Dashboards
+FR7 – Personalization
+Engine
+FR8 – Integration
+Connectors
+FR9 – Collaboration &
+Workflow Management
+Performance
+Security
+Scalability
+Data Privacy
+Reliability
+Create experiments, configure multiple
+variations, launch, execute, and verify
+results
+Verify Bayesian analysis and result
+presentation
+Verify WYSIWYG and developer-level
+experiment configuration
+Verify interaction capture and
+playback/visualization
+Verify behavior-based segmentation and
+targeting
+Verify analytics updates and dashboard
+information
+Verify segment-based customized
+experiences
+Verify supported data synchronization
+with available integrations
+Verify planning, collaboration, and
+workflow functions
+Verify editing workflow response against
+documented 2-second requirement
+Verify 2FA, RBAC, and activity logs
+where test access is available
+Validate behavior under agreed
+visitor/workload levels
+Verify applicable GDPR/CCPA/regional
+privacy requirements once detailed
+acceptance criteria are provided
+Validate availability against 99.9% SLA
+only where suitable
+High
+High
+High
+High
+High
+High
+High
+High
+Medium
+High
+High
+High
+High
+High
+Requirement
+Planned Coverage
+Risk
+monitoring/environment exists
+The functional requirements and their priorities are documented in the PRD.
+Product Requirements Document (…
+Business-risk coverage
+The PRD identifies technical complexity, data accuracy, and user adoption as
+product risks. 
+Product Requirements Document (…
+Planned coverage therefore includes:
+Technical complexity: editor, experiment setup, integrations, and
+workflow testing.
+Data accuracy: SmartStats, reporting, dashboards, and integration-data
+validation.
+User adoption: workflow usability and core-user journeys.
+5. Test Approach, Levels, and Types
+Test Approach
+A risk-based, requirement-driven approach will be used.
+Testing will begin with high-priority business-critical functionality and core user
+journeys, followed by integration and regression coverage.
+Test Levels
+1. Component/System-level functional testing — Planned
+Verify individual product capabilities and complete user flows.
+2. Integration testing — Planned
+Verify data exchange between VWO and supported external systems where
+test credentials/environment are available.
+3. End-to-end testing — Planned
+Validate documented user journeys, particularly:
+A/B Test flow
+Define hypothesis → select audience → configure variations → launch → monitor
+→ review SmartStats → conclude result. 
+Behavioral analysis flow
+Product Requirements Document (…
+Access Insights → generate heatmaps/session recordings/funnels → correlate
+insights → prioritize optimization ideas. 
+4. Regression testing — Planned
+Product Requirements Document (…
+Run regression tests after relevant changes to ensure existing functionality
+remains unaffected.
+Applicable Test Types
+Test Type
+Functional
+Integration
+End-to-End
+Regression
+Cross-browser
+Cross-device
+Performance
+Security
+Scalability
+Privacy
+Usability
+Reliability
+Applicability
+Yes
+Yes
+Yes
+Yes
+Yes, because explicitly documented
+Yes, because explicitly documented
+Yes
+Yes
+Yes, subject to agreed workload
+Yes, subject to detailed compliance criteria
+Relevant to documented usability/customer-satisfaction
+objectives, but measurable acceptance criteria are Not
+provided
+Yes, subject to appropriate monitoring/environment
+6. Environment, Tools, Access, and Test Data
+Environment
+Application: VWO platform
+Application URL: 
+https://app.vwo.com/
+Test environment details: Not provided.
+The following require confirmation:
+Dedicated QA/staging environment.
+Application version/build.
+Supported browsers and versions.
+Supported device matrix.
+Backend/service endpoints.
+Database/test infrastructure.
+Third-party integration environments.
+Monitoring infrastructure.
+Tools
+Required/proposed:
+VWO application.
+Browser developer tools.
+API testing tool, if APIs are exposed and documented.
+Defect-management tool — Not provided.
+Test-management tool — Not provided.
+Performance-testing tool — Not provided.
+Monitoring/logging tools — Not provided.
+Tool selection should be agreed before execution.
+Access
+Required access includes:
+Valid VWO test accounts.
+Appropriate user roles.
+2FA access where enabled.
+Access to experiment creation/editing.
+Access to Insights.
+Access to reporting.
+Access to integrations being tested.
+Administrative/RBAC access for security testing where authorized.
+Credentials/access details: Not provided.
+Test Data
+Proposed test data should include:
+Test users representing different audience segments.
+Different geographic/behavioral attributes where supported.
+Multiple experiment variations.
+Positive and negative test scenarios.
+Sample funnel events.
+Sample behavioral interaction data.
+Integration records.
+Actual test data and expected values are Not provided and must be agreed
+before execution.
+7. Entry and Exit Criteria
+Entry Criteria
+Testing may begin when:
+1. Test environment is available and stable.
+2. Required application build is deployed.
+3. Approved requirements/testable acceptance criteria are available.
+4. Required user accounts and permissions are available.
+5. Required test data is available.
+6. Required integrations are accessible.
+7. Defect-management mechanism is available.
+8. Test cases/scenarios for prioritized requirements are reviewed.
+9. Known environment limitations are documented.
+Exit Criteria
+Testing may be considered complete when:
+1. 100% of approved planned high-priority test cases have execution
+status recorded.
+2. All critical/high-priority requirements have planned coverage.
+3. No open Severity 1/Critical defects remain, unless explicitly accepted by
+the authorized stakeholder.
+4. Remaining defects have documented severity, impact, workaround/status,
+and disposition.
+5. Regression testing for the agreed release scope is completed.
+6. Required integration scenarios are completed.
+7. Applicable non-functional tests are completed.
+8. Test summary report is prepared.
+9. Business/product stakeholders approve known residual risks.
+Note: The numerical thresholds above are proposed acceptance criteria
+because the PRD does not define test completion thresholds, defect tolerances,
+or ownership.
+8. Roles, Responsibilities, Estimates, and
+Schedule
+Responsibilities
+Role
+QA/Test Team
+Product Manager
+Engineering/Development
+DevOps
+Data/Analytics Team
+Security/Privacy Team
+Business Stakeholders
+Responsibility
+Test planning, test design, execution, defect
+reporting, regression, reporting
+Requirement clarification and business
+acceptance
+Defect investigation and fixes
+Environment/deployment support
+Analytics, tracking, and data-validation support
+Security/privacy requirement clarification and
+validation
+Final acceptance and residual-risk approval
+Named individual owners: Not provided in the PRD.
+Estimates
+Effort estimates are Not provided because the PRD does not specify:
+Number of test cases.
+Number of supported browsers/devices.
+Number of integrations.
+Number of environments.
+Required workload.
+Team size.
+Release timeline.
+Therefore, a reliable schedule cannot be derived from the PRD alone.
+Proposed approach: estimate after environment, scope, acceptance criteria,
+integration list, and team capacity are confirmed.
+9. Defect Management and Reporting
+Defect Reporting
+Each defect should contain, at minimum:
+Defect ID.
+Requirement/feature reference.
+Summary.
+Environment/build.
+Preconditions.
+Steps to reproduce.
+Expected result.
+Actual result.
+Severity.
+Priority.
+Evidence such as screenshots/logs/video where applicable.
+Reproducibility.
+Assigned owner.
+Status.
+Defect Triage
+Proposed severity:
+Critical: Core business capability unavailable or severe data/security
+impact.
+High: Major documented functionality fails with significant business impact.
+Medium: Functionality is impaired but workaround exists.
+Low: Minor functional/UI issue with limited impact.
+These severity definitions are proposed, not specified in the PRD.
+Reporting Cadence
+Proposed:
+Daily execution/defect update during active testing.
+Defect triage at least once per business day.
+Test summary at test completion.
+Frequency and participants require stakeholder agreement.
+Defect Lifecycle
+New → Triaged → Assigned → Fixed → Retest → Closed
+Possible additional states:
+Rejected / Duplicate / Deferred / Cannot Reproduce
+10. Risks, Dependencies, Assumptions, and
+Open Questions
+Risks
+Risk
+Incorrect experiment
+results
+Incorrect behavioral data
+Integration
+synchronization failure
+Targeting errors
+Performance degradation
+Unauthorized access
+High visitor volume
+impact
+Impact
+High
+High
+High
+High
+High
+High
+High
+Planned Mitigation
+Validate experiment configuration,
+result calculations, and SmartStats
+output
+Validate captured interactions against
+controlled test actions
+Perform integration and data
+reconciliation testing
+Test multiple audience attributes and
+boundary conditions
+Execute agreed performance
+scenarios
+Validate 2FA, RBAC, and activity
+logging
+Conduct scalability testing with an
+agreed workload
+Risk
+Impact
+Planned Mitigation
+Privacy compliance gaps
+Complex workflows
+High
+Medium
+Obtain detailed compliance
+requirements and test accordingly
+Validate end-to-end user journeys
+The underlying product risks of technical complexity and data accuracy are
+explicitly identified in the PRD. 
+Dependencies
+Product Requirements Document (…
+Stable QA/staging environment.
+Valid test accounts.
+Access to supported integrations.
+Test data.
+Detailed security/privacy requirements.
+Performance workload targets.
+Browser/device support matrix.
+Defect-management system.
+Engineering support for defect resolution.
+Assumptions
+The supplied PRD is the baseline requirement document.
+Undocumented behavior will not be treated as an expected requirement.
+External integrations will only be tested where authorized access is
+provided.
+Non-functional acceptance thresholds not defined in the PRD require
+stakeholder agreement.
+Open Questions
+1. What browsers and versions are officially supported?
+2. What devices/OS combinations are required?
+3. Which integrations are mandatory for this release?
+4. What are the exact acceptance criteria for SmartStats calculations?
+5. What visitor/workload level should be used for scalability testing?
+6. How should the 2-second performance requirement be measured?
+7. What are the detailed GDPR/CCPA acceptance criteria?
+8. What roles and permissions are expected for RBAC?
+9. What activity-log events must be captured?
+10. What is the approved reliability measurement period for the 99.9% SLA?
+11. Which test environment should be used?
+12. What defect severity/priority definitions and exit thresholds should be
+adopted?
+11. Suspension and Resumption Criteria
+Suspension Criteria
+Testing may be suspended if:
+Test environment becomes unavailable or unstable.
+Critical functionality required for further testing is blocked.
+Required test accounts/access are unavailable.
+Required test data is unavailable.
+A critical defect prevents meaningful continuation.
+Major dependency/integration services are unavailable.
+Application build is changed significantly during active execution without an
+agreed regression strategy.
+Resumption Criteria
+Testing may resume when:
+Environment is restored and validated.
+Blocking defect is fixed or an approved workaround is available.
+Required access/data is restored.
+Dependencies are available.
+New build is deployed and smoke testing passes.
+Impacted test cases are identified and regression scope is agreed.
+12. Test Deliverables and Approval
+Deliverables
+1. Test Plan.
+2. Requirements-to-test coverage matrix.
+3. Test scenarios/test cases.
+4. Test data.
+5. Test execution results.
+6. Defect reports.
+7. Regression results.
+8. Integration test results.
+9. Non-functional test results, where applicable.
+10. Test summary report.
+11. Known issues/residual-risk report.
+Approval
+The test plan and final test completion should be reviewed by the relevant:
+QA/Test Lead.
+Product Manager.
+Engineering representative.
+Relevant business/stakeholder representatives.
+Named approvers and formal approval criteria: Not provided in the PRD
+and require agreement.
+Overall traceability
+The plan is directly aligned to the PRD's nine functional requirements,
+documented non-functional requirements, user flows, business objectives, and
+identified product risks. 
+Product Requirements Document (… +1
+Important: This document defines planned testing only. No tests are
+claimed to have been executed, and no pass/fail result has been inferred from
+the PRD.
+Sources
+You’re out of attachments for now. Start a free Plus trial for more, or try again
+after 10:35 AM.
+Try Plus free
